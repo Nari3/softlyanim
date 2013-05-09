@@ -9,6 +9,7 @@
 
 <style type="text/css">
 	div.block {
+		position: relative;
 		width: 600px;
 		height: 400px;
 		margin: 0 auto 40px;
@@ -16,12 +17,33 @@
 		border: 1px solid #999;
 	}
 	div.item {
+		position: relative;
+	}
+	div.item01 {
 		width: 50px;
 		height: 50px;
-		background: #f66;
-		position: relative;
+		background: #f33;
 		left: 250px;
 		top: 150px;
+	}
+	div.item02 {
+		position: absolute;
+	}
+	div.item03 {
+		width: 30px;
+		height: 30px;
+		background: #000;
+		border-radius: 15px;
+		left: 270px;
+		top: 170px;
+	}
+
+	div.sky {
+		background: url(img/sky.jpg) no-repeat;
+		
+	}
+	div.wall {
+		background: url(img/wall.jpg) no-repeat;
 	}
 </style>
 
@@ -39,8 +61,8 @@
 			$('.item02').softlyanim({
 				'h': 0,
 				'v': 50,
-				'easing': 'linear',
-				'speed': 1000
+				'easing': 'swing',
+				'speed': 2000
 			});
 			
 			//虫っぽい
@@ -67,13 +89,19 @@
 
 		</div>
 	</div>
-	<div class="block">
+	<div class="block sky">
 		<h2>縦方向のみ</h2>
-		<div class="item item02">
-
+		<div class="item item02" style="left: 50px; top: 100px;">
+			<img src="img/cloud1.png" alt="" />
+		</div>
+		<div class="item item02" style="left: 200px; top: 50px;">
+			<img src="img/cloud2.png" alt="" />
+		</div>
+		<div class="item item02" style="left: 400px; top: 100px;">
+			<img src="img/cloud3.png" alt="" />
 		</div>
 	</div>
-	<div class="block">
+	<div class="block wall">
 		<h2>虫っぽい</h2>
 		<div class="item item03">
 
