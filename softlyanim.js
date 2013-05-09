@@ -3,8 +3,7 @@ jQuery softlyanim Plugin
 version: 1.0
 Author: T.Morimoto
 
-https://github.com/woodroots/infiniteslide
-http://wood-roots.com/?p=514
+https://github.com/woodroots/softlyanim/
 */
 
 (function($){
