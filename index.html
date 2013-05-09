@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>sftlyanim</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<style type="text/css">
+	div.block {
+		position: relative;
+		background: #f33;
+		width: 50px;
+		height: 50px;
+	}
+	div.block2 {
+		position: relative;
+		background: #3ff;
+		width: 50px;
+		height: 50px;
+	}
+	#wrap {
+		width: 600px;
+		margin: 100px auto;
+	}
+</style>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="jquery.easing.min.js"></script>
+<script type="text/javascript" src="softlyanim.js"></script>
+
+<script type="text/javascript">
+	(function($){
+		$(function(){
+			$('.block,.block2').softlyanim({
+				'v': 100, //縦方向の振れ幅
+				'h': 0, //横方向の振れ幅
+				'easing': 'swing', //イージング
+				'speed': 1000, //スピード
+				'repeat': true, //リピートするかどうか
+				'delay': 0 //1アクション後のタメ
+			});
+		});
+	})(jQuery);
+</script>
+
+</head>
+<body>
+<div id="wrap">
+	<div class="block">
+
+	</div>
+	<div class="block2">
+
+	</div>
+</div>
+
+</body>
+</html>
+
+
+
