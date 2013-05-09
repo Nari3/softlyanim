@@ -22,6 +22,7 @@ var settings = $.extend( {
 
 //アニメーション
 var softlyanim = function(obj){
+
 	if(typeof crleft === 'undefined'){
 		crleft = parseInt($(obj).css('left'));
 	}
