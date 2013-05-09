@@ -1,9 +1,13 @@
 softlyanim
 ==========
 
+jQuery softlyanim Plugin
+version: 1.0
+Author: T.Morimoto
+
 無限ループするアニメーションプラグイン
 
-##html
+###html
 head内にjQueryおよびjQuery.easing.jsと当プラグインsoftlyanim.jsをロードします。
 
 ```
@@ -12,7 +16,7 @@ head内にjQueryおよびjQuery.easing.jsと当プラグインsoftlyanim.jsを�
 <script type="text/javascript" src="softlyanim.js"></script>
 ```
 
-##javascript及びオプション
+###javascript及びオプション
 移動量、イージング、スピード、リピートの有無（mouseenterなどでの使用を想定）、ディレイを設定できます。
 
 ```
@@ -30,5 +34,5 @@ head内にjQueryおよびjQuery.easing.jsと当プラグインsoftlyanim.jsを�
 	})(jQuery);
 ```
 
-##CSS
+###CSS
 適用するオブジェクトはposition: absolute;かrelative;かfixed;にしてください。
