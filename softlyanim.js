@@ -22,9 +22,16 @@ var settings = $.extend( {
 
 //アニメーション
 var softlyanim = function(obj){
+	if(typeof crleft === 'undefined'){
+		crleft = parseInt($(obj).css('left'));
+	}
+	if(typeof crtop === 'undefined'){
+		crtop = parseInt($(obj).css('top'));
+	}
+	
 	$(obj).animate({
-		left: (settings.h/2) - Math.floor( Math.random() * (settings.h)) + 'px',
-		top: (settings.v/2) - Math.floor( Math.random() * (settings.v)) + 'px'
+		left: crleft - ((settings.h/2) - Math.floor( Math.random() * (settings.h))) + 'px',
+		top: crtop - ((settings.v/2) - Math.floor( Math.random() * (settings.v))) + 'px'
 		},settings.speed,settings.easing).delay(settings.delay).promise().done(function(){
 			if(settings.repeat){
 				softlyanim(obj);
