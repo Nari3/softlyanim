@@ -6,6 +6,7 @@ version: 1.0
 Author: T.Morimoto
 
 無限ループするアニメーションプラグイン
+http://wood-roots.com/sample/softlyanim/
 
 ###html
 head内にjQueryおよびjQuery.easing.jsと当プラグインsoftlyanim.jsをロードします。
